@@ -1,3 +1,3 @@
-# Leashless
+# The Leashless Dog
 
-All the fancy stuff required to run [theleashlessdog.com](https://theleashlessdog.com/)
+A custom theme for [theleashlessdog.com](https://theleashlessdog.com/)
