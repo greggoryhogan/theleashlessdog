@@ -1,8 +1,8 @@
-
-		</div><!-- #content -->
+			</div><!--end content-->
+		</div><!--end container-->
 	</main><!-- #main -->
 	<footer id="colophon" class="footer">
-		<div class="container">
+		<div class="container __footer">
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 				<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
 					<ul class="footer-navigation-wrapper">

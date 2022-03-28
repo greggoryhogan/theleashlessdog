@@ -25,7 +25,7 @@ function load_leashless_theme_scripts() {
 	$version = wp_get_theme()->get('Version');
     wp_enqueue_style( 'leashless-theme', LSHLSS_THEME_URI . '/assets/css/main.css',null,$version );
     wp_enqueue_style('google-fonts','https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    wp_enqueue_script( 'site-js', LSHLSS_THEME_URI. '/assets/js/site.js', array('jquery'),$version, false );
+    wp_enqueue_script( 'site-js', LSHLSS_THEME_URI. '/assets/js/site.js', array('jquery'),$version, true );
     //wp_enqueue_script( 'site-js', LSHLSS_THEME_URI. '/assets/js/site.min.js', array('jquery'),$version, false );
 }
 add_action( 'wp_enqueue_scripts', 'load_leashless_theme_scripts' );

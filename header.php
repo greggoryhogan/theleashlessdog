@@ -11,7 +11,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lshlss' ); ?></a>
 
     <header id="masthead" class="header">
-        <div class="container">
+        <div class="container __header">
             <div class="mobile-container">
                 <div class="site-branding">
                     <h1><a href="<?php echo get_bloginfo('url'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
@@ -51,4 +51,4 @@
             <div class="page-title<?php if ( has_post_thumbnail() ) { echo ' has-thumb'; } ?>">
                 <?php leashless_page_title(); ?>
             </div>
-           
+            <div class="page-content">
