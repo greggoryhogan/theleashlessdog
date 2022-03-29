@@ -54,6 +54,7 @@ body {
             flex-direction: row;
         }
         .page-content {
+            width: 100%;
             padding: 0 2.5rem 2.5rem;
             @media all and (max-width: 48rem) {
                 padding: 0 1.5rem 2.5rem;;
@@ -225,16 +226,13 @@ body {
             }
         }
         .page-title {
-            background: $yellow;
             color: $black;
             display: flex;
             width: 100%;
             align-items: center;
-            text-align: center;
             align-content: center;
             flex-direction: column;
             padding: 1.5rem;
-            margin-top: -2.5rem;
             margin-bottom: 2.5rem;
             @media all and (max-width: 48rem) { 
                 margin-top: 0;
@@ -274,6 +272,8 @@ body {
         .content {
             .page-title {
                 margin-top: -6rem;
+                background: $yellow;
+                text-align: center;
                 @media all and (max-width: 48rem) { 
                     margin-top: 0;
                     margin-bottom: 1rem;

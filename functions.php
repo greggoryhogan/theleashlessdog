@@ -63,6 +63,11 @@ function leashless_acf_load_point( $paths ) {
  * Custom title output for banner section
  */
 function leashless_page_title() {
+    if(is_home() || is_front_page()) {
+        
+    } else {
+        echo '<div class="page-content">';
+    }
     //fallback check for get field. We'll always use but prevents theme from crashing without it
     if(function_exists('get_field')) {
         echo '<h1>';
@@ -81,6 +86,11 @@ function leashless_page_title() {
         } 
     } else {
         echo '<h1>'.get_the_title().'</h1>';
+    }
+    if(is_home() || is_front_page()) {
+        
+    } else {
+        echo '</div>';
     }
 }
 
@@ -159,7 +169,7 @@ function leashless_page_header() {
     if($featured_image != '') {
         echo '<img src="'.$featured_image.'" />';
     } else {
-        echo '<img src="https://theleashlessdog.local/wp-content/uploads/2022/03/leashless-hero-1-1270x475.png" />';
+        //echo '<img src="https://theleashlessdog.local/wp-content/uploads/2022/03/leashless-hero-1-1270x475.png" />';
     }
 }
 
