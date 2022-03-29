@@ -22,10 +22,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_6236617716968",
-            "label": "Subtitle",
-            "name": "subtitle",
-            "type": "text",
+            "key": "field_624353de7f40f",
+            "label": "Additional Content",
+            "name": "additional_content",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -35,10 +35,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
         }
     ],
     "location": [
@@ -73,5 +73,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647731086
+    "modified": 1648579623
 }

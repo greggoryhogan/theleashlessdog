@@ -42,13 +42,11 @@
     </header><!-- #masthead -->
 
     <main id="main" class="content">
-        <?php if ( has_post_thumbnail() ) { ?>
-            <div class="page-hero">
-                <?php the_post_thumbnail(); ?>
-            </div>
-        <?php } ?>
+        <div class="page-hero">
+            <?php leashless_page_header(); ?>
+        </div>
         <div class="container">
-            <div class="page-title<?php if ( has_post_thumbnail() ) { echo ' has-thumb'; } ?>">
+            <div class="page-title">
                 <?php leashless_page_title(); ?>
             </div>
             <div class="page-content">

@@ -221,6 +221,7 @@ body {
         .page-hero {
             img {
                 display: block;
+                width: 100%;
             }
         }
         .page-title {
@@ -233,14 +234,11 @@ body {
             align-content: center;
             flex-direction: column;
             padding: 1.5rem;
-            margin-top: 1rem;
-            &.has-thumb {
-                margin-top: -6rem;
-                margin-bottom: 2.5rem;
-                @media all and (max-width: 48rem) { 
-                    margin-top: 0;
-                    margin-bottom: 1rem;
-                }
+            margin-top: -2.5rem;
+            margin-bottom: 2.5rem;
+            @media all and (max-width: 48rem) { 
+                margin-top: 0;
+                margin-bottom: 1rem;
             }
             h1 {
                 display: block;
@@ -250,6 +248,11 @@ body {
             }
             h2 {
                 margin: 1rem 0 0 0;
+            }
+            .eyebrow {
+                display: block;
+                font-size: 50%;
+                margin-bottom: .5rem;
             }
             @media all and (max-width: 48rem) {
                 margin-top: 0;
@@ -264,5 +267,18 @@ body {
         background: $yellow;
         min-height: 5rem;
         padding: 1.5rem;
+    }
+}
+.home {
+    .site {
+        .content {
+            .page-title {
+                margin-top: -6rem;
+                @media all and (max-width: 48rem) { 
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
     }
 }
