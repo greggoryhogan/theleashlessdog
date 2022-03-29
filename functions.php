@@ -143,7 +143,7 @@ function leashless_page_header() {
             $featured_image = get_the_post_thumbnail_url($post, 'hero-image');
         }
     } else {
-        if(is_tax()) {
+        /*if(is_tax()) {
             $query = get_queried_object();
             //echo '<pre>'.print_r($query,true).'</pre>';
             if($query->taxonomy == 'locations') {
@@ -164,7 +164,7 @@ function leashless_page_header() {
                 }
                 
             } 
-        }
+        }*/
     }
     if($featured_image != '') {
         echo '<img src="'.$featured_image.'" />';
